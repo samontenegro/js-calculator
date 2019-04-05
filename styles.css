@@ -1,0 +1,147 @@
+div.calc-window {
+	display: block;
+	position: relative;
+	height: 700px;
+	width: 400px;
+	border: solid 2px rgb(120,120,120);
+	border-radius: 20px;
+	z-index: 20;
+	margin: 0 auto;
+}
+
+div.calc-main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: inherit;
+	width: inherit;
+	border-radius: inherit;
+}
+
+div.calc-disp {
+	position: relative;
+	height: 180px;
+	width: inherit;
+	margin: 0;
+}	
+
+div.calc-keyboard {
+	font-family: sans-serif;
+	position: relative;
+	height: 520px;
+	width: inherit;
+	margin: 0;
+	padding: 0;
+	border-bottom-right-radius: 18px;
+	border-bottom-left-radius: 18px;
+	background-color: rgb(240,240,240);
+}
+
+div.calc-disp-wrapper {
+	position: relative;
+	height: 60px;
+	width: 400px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: right;
+	white-space: nowrap;
+}
+
+div.calc-stack {
+	float: right;
+	position: relative;
+	height: 60px;
+	/* width: 400px; */
+	margin: 0;
+}
+
+div.calc-stack > p {
+	font-family: sans-serif;
+	height: 52px;
+	margin: 4px 10px;
+
+	color: rgb(220,220,220);
+	font-size: 52px;
+	line-height: 52px;
+}
+
+div#st1.calc-stack > p, div.key > p {
+	color: rgb(100,100,100);
+}
+
+div.calc-keypad {
+	display: inline-block;
+	position: relative;
+	height: 300px;
+	width: 300px;
+	margin: 0;
+}
+
+div.calc-func.right {
+	display: inline-block;
+	position: relative;
+	height: 300px;
+	width: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+div.calc-func.bottom, div.calc-func.top {
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+div.calc-adv {
+	display: block;
+	position: relative;
+	height:	16px;
+	width: 400px;
+}
+
+div.calc-adv > p {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 1000;
+	text-align: center;
+	user-select: none;
+	color: rgb(50,50,50);
+}
+
+div.key.num {
+	position: relative;
+	float: right;
+	width: 100px;
+	height: 100px;
+}
+
+div.key.func, div.key.zero {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+div.key > p {
+	margin: 0 auto;
+	padding: 0;
+	width: 60px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 60px;
+	user-select: none;
+}
+
+div.key.func > p {
+	color: #FFBF00;
+}
+
+div.key.func.trig > p, div.key.func.misc > p {
+	font-size: 40px;
+}
